@@ -3,5 +3,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def index(request):
-	return HttpResponse("Test")
+def plotter(request, player_id):
+	return HttpResponse('This will show the graph of the player with the player id %s' % player_id)
